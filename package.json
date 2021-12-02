@@ -8,7 +8,8 @@
   "scripts": {
     "dev": "ts-node-dev --inspect --transpile-only --ignore-watch node_modules src/server.ts",
     "build": "tsc",
-    "lint": "eslint src/**"
+    "lint": "eslint src/**",
+    "apidoc": "apidoc -i src -o  public/apidoc"
   },
   "dependencies": {
     "express": "^4.17.1"
@@ -30,5 +31,10 @@
     "prettier": "^2.5.0",
     "ts-node-dev": "^1.1.8",
     "typescript": "^4.5.2"
+  },
+  "apidoc": {
+    "name": "express-rest-api-typescript",
+    "version": "1.0.0",
+    "description": "Um boilerplate para construir uma REST APIs usando Node.js e TypeScript."
   }
 }

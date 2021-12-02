@@ -17,3 +17,4 @@ Security/Segurança em caso de vulnerabilidades.
 ### Added
 
 - Inclusão e configuração de ferramentas de formatação de código e Linter (ESLint e Prettier)
+- Inclusão e configuração de ferramenta de documentação (ApiDoc.js)
