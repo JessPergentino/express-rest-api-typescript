@@ -6,12 +6,13 @@
   "author": "Jessica Pergentino <jessicapergentino@hotmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "ts-node-dev --inspect --transpile-only --ignore-watch node_modules src/server.ts",
+    "start": "ts-node-dev --inspect --transpile-only --ignore-watch node_modules src/server.ts",
     "build": "tsc",
     "lint": "eslint src/**",
     "apidoc": "apidoc -i src -o  public/apidoc"
   },
   "dependencies": {
+    "dotenv": "^10.0.0",
     "express": "^4.17.1"
   },
   "devDependencies": {
@@ -33,8 +34,8 @@
     "typescript": "^4.5.2"
   },
   "apidoc": {
-    "name": "express-rest-api-typescript",
+    "name": "Documentação da API express-rest-api-typescript",
     "version": "1.0.0",
-    "description": "Um boilerplate para construir uma REST APIs usando Node.js e TypeScript."
+    "description": "Documentação inicial para o boilerplate de uma REST APIs usando Node.js e TypeScript."
   }
 }
