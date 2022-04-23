@@ -1,17 +1,11 @@
-import express, { Request, Response, Router } from 'express';
+import app from './app';
+import environment from './config/environment';
+import DataBase from './db';
 
-const app = express();
-
-const route = Router();
-
-app.use(express.json());
-
-route.get('/', (_req: Request, res: Response) => {
-  res.json({
-    message: 'hello world with Typescript',
+DataBase.sync()
+  .then(() => {
+    app.listen(environment.app.port, () => console.log(`app listening on port ${environment.app.port}`));
+  })
+  .catch(error => {
+    console.log(error);
   });
-});
-
-app.use(route);
-
-app.listen(3000, () => 'server running on port 3000');
