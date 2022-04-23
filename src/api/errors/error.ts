@@ -10,4 +10,5 @@ export class ErrorModel extends Error {
 // Errors
 export enum ErrorTypes {
   TYPE_ERROR_NOT_FOUND = 'ErrorNotFound',
+  TYPE_ERROR_INVALID_PRODUCT = 'Produto Inválido',
 }

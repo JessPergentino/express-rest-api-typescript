@@ -8,7 +8,7 @@ const main = Router();
  * @apiName ShowInfo
  * @apiGroup Main
  *
- * @apiSuccess {String} status Estatus da API.
+ * @apiSuccess {String} status Status da API.
  * @apiSuccess {String} message Mensagem de retorno.
  *
  * @apiSuccessExample Success-Response:

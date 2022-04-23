@@ -1,4 +1,11 @@
 import app from './app';
 import environment from './config/environment';
+import DataBase from './db';
 
-app.listen(environment.app.port, () => 'server running on port 3000');
+DataBase.sync()
+  .then(() => {
+    app.listen(environment.app.port, () => console.log(`app listening on port ${environment.app.port}`));
+  })
+  .catch(error => {
+    console.log(error);
+  });

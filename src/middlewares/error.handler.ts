@@ -12,7 +12,15 @@ const handleError = (error: any, _req: Request, res: Response, next: NextFunctio
       });
       next();
       break;
-
+    case ErrorTypes.TYPE_ERROR_INVALID_PRODUCT:
+      res.status(error.statusCode || 500);
+      res.json({
+        status: 'error',
+        message: error.message,
+        source: error.source,
+      });
+      next();
+      break;
     default:
       res.status(500);
       res.json({

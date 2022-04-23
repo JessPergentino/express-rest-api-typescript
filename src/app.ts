@@ -2,6 +2,7 @@ import express, { NextFunction } from 'express';
 import { ErrorNotFound } from './api/errors/error.notFount';
 import handleError from './middlewares/error.handler';
 import main from './routes/main.router';
+import product from './routes/product.router';
 
 const app = express();
 
@@ -9,12 +10,13 @@ app.use(express.json());
 app.use(express.static('public'));
 
 app.use(main);
+app.use(product);
 /**
  * @api {get|post|put|delete} * Mostrar mensagem de erro quando a rota não é encontrada
  * @apiName RouteNotFound
  * @apiGroup Main
  *
- * @apiError {String} status Estatus da API.
+ * @apiError {String} status Status da API.
  * @apiError {String} message Mensagem de retorno.
  *
  * @apiErrorExample Error-Response:
