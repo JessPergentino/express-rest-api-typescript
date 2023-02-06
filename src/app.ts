@@ -1,3 +1,4 @@
+import "reflect-metadata";
 import express, { NextFunction } from 'express';
 import { ErrorNotFound } from './api/errors/error.notFount';
 import { pinoHttp } from './config/logger';
