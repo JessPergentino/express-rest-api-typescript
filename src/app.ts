@@ -1,5 +1,6 @@
 import express, { NextFunction } from 'express';
 import { ErrorNotFound } from './api/errors/error.notFount';
+import { pinoHttp } from './config/logger';
 import handleError from './middlewares/error.handler';
 import main from './routes/main.router';
 import product from './routes/product.router';
@@ -8,6 +9,7 @@ const app = express();
 
 app.use(express.json());
 app.use(express.static('public'));
+app.use(pinoHttp);
 
 app.use(main);
 app.use(product);

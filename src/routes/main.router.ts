@@ -19,6 +19,7 @@ const main = Router();
  *     }
  */
 main.get('/', (req: Request, res: Response): void => {
+  req.log.info('Welcome to API Service');
   MainController.showInfo(req, res);
 });
 

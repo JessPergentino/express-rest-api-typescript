@@ -6,7 +6,7 @@
   "author": "Jessica Pergentino <jessicapergentino@hotmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "ts-node-dev --inspect --transpile-only --ignore-watch node_modules src/server.ts",
+    "start": "ts-node-dev --inspect --transpile-only --ignore-watch node_modules src/server.ts | pino-pretty",
     "build": "tsc",
     "lint": "eslint src/**",
     "apidoc": "apidoc -i src -o  public/apidoc"
@@ -16,6 +16,8 @@
     "express": "^4.17.1",
     "pg": "^8.7.3",
     "pg-hstore": "^2.3.4",
+    "pino": "^8.8.0",
+    "pino-http": "^8.3.1",
     "sequelize": "^6.19.0"
   },
   "devDependencies": {

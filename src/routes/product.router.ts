@@ -34,6 +34,7 @@ const product = Router();
  *
  */
 product.post('/product', (req: Request, res: Response, next: NextFunction): void => {
+  req.log.info("Iniciando requisicao")
   ProductController.postProduct(req, res, next);
 });
 

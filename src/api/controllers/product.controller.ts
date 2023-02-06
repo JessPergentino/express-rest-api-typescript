@@ -1,4 +1,5 @@
 import { NextFunction, Request, Response } from 'express';
+import { logger } from '../../config/logger';
 import { SUCCESS } from '../../resource/constants';
 import ProductService from '../services/product.service';
 
@@ -14,6 +15,7 @@ class ProductController {
       await ProductService.registerProduct(newProduct);
       return res.json({ status: SUCCESS, message: 'Produto cadastrado com sucesso!' });
     } catch (error) {
+      logger.error('falha na requisição');
       next(error);
     }
   }
