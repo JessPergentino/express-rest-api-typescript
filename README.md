@@ -1,4 +1,4 @@
-![licence](https://img.shields.io/github/license/JessPergentino/express-rest-api-typescript?style=for-the-badge) ![version](https://img.shields.io/github/package-json/v/JessPergentino/express-rest-api-typescript?style=for-the-badge)
+![licence](https://img.shields.io/github/license/JessPergentino/express-rest-api-typescript?style=for-the-badge) ![version](https://img.shields.io/github/package-json/v/JessPergentino/express-rest-api-typescript/main?logo=Node.js&style=for-the-badge)
 
 **:construction: Projeto em construção :construction:**
 
