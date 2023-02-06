@@ -1,5 +1,5 @@
 import { Dialect, Sequelize } from 'sequelize';
-import environment from './config/environment';
+import environment from './environment';
 
 const DataBase = new Sequelize(environment.db.database, environment.db.username, environment.db.password, {
   host: environment.db.host,
