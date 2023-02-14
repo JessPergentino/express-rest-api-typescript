@@ -1,8 +1,9 @@
-import { IProduct } from '../interfaces/Product.interface';
-import Product from '../models/product.model';
+import { IProduct } from '@api/interfaces/Product.interface';
+import Product from '@api/models/product.model';
+import { IProductRepository } from './dtos/IProductRepository.interface';
 
-class ProductRepository {
-  static async creatProduct(newProduct: IProduct) {
+class ProductRepository implements IProductRepository {
+  async creatProduct(newProduct: IProduct): Promise<void> {
     await Product.create({
       name: newProduct.name,
       price: newProduct.price,

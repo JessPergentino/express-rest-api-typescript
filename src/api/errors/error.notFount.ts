@@ -1,4 +1,4 @@
-import { ErrorModel, ErrorTypes } from './error';
+import { ErrorModel, ErrorTypes } from "./error";
 
 export class ErrorNotFound extends ErrorModel {
   constructor(statusCode: number, message: string) {
