@@ -1,9 +1,11 @@
+import 'reflect-metadata';
 import express, { NextFunction } from 'express';
-import { ErrorNotFound } from './api/errors/error.notFount';
-import { pinoHttp } from './config/logger';
-import handleError from './middlewares/error.handler';
-import main from './routes/main.router';
-import product from './routes/product.router';
+import { pinoHttp } from '@config/logger';
+import main from '@routes/main.router';
+import product from '@routes/product.router';
+import { ErrorNotFound } from '@api/errors/error.notFount';
+import handleError from '@middlewares/error.handler';
+import "@container/index"
 
 const app = express();
 

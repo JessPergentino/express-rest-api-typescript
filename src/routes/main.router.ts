@@ -1,5 +1,5 @@
+import MainController from '@api/controllers/main.controller';
 import { Request, Response, Router } from 'express';
-import MainController from '../api/controllers/main.controller';
 
 const main = Router();
 

@@ -1,6 +1,6 @@
+import { IEnvironment } from '@api/interfaces/environment.interface';
+import convertNumber from '@utils/converters';
 import dotenv from 'dotenv';
-import { IEnvironment } from '../api/interfaces/environment.interface';
-import convertNumber from '../utils/converters';
 
 dotenv.config();
 

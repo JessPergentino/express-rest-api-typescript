@@ -1,1 +1,1 @@
-export const SUCCESS = 'success'
+export const SUCCESS = 'success';
