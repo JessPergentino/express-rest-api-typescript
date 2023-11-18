@@ -1,5 +1,5 @@
 import { IProductRepository } from '@api/repositories/dtos/IProductRepository.interface';
-import ProductRepository from '@api/repositories/Product.repository';
+import ProductRepository from '@api/repositories/product.repository';
 
 import { container } from 'tsyringe';
 

@@ -17,4 +17,5 @@
   "editor.tabSize": 2,
   "editor.renderWhitespace": "boundary",
   "files.eol": "\n",
+  "typescript.tsdk": "node_modules\\typescript\\lib"
 }
