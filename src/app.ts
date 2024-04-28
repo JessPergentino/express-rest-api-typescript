@@ -5,7 +5,7 @@ import main from '@routes/main.router';
 import product from '@routes/product.router';
 import { ErrorNotFound } from '@api/errors/error.notFount';
 import handleError from '@middlewares/error.handler';
-import "@container/index"
+import '@container/index';
 
 const app = express();
 

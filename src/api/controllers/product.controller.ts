@@ -5,7 +5,7 @@ import ProductService from '@api/services/product.service';
 import { container } from 'tsyringe';
 
 class ProductController {
-  static async postProduct(req: Request, res: Response, next: NextFunction): Promise<Response | undefined> {
+  static async postProduct(req: Request, res: Response, next: NextFunction): Promise<any> {
     const productService = container.resolve(ProductService);
 
     const newProduct = {
