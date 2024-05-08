@@ -5,7 +5,7 @@ const logger = pino();
 
 const pinoHttp = PinoHttp({
   // Define a custom logger level
-  customLogLevel: function (req, res, err) {
+  customLogLevel: function (_req, res, err) {
     if (res.statusCode >= 400 && res.statusCode < 500) {
       return 'warn';
     } else if (res.statusCode >= 500 || err) {
@@ -23,7 +23,7 @@ const pinoHttp = PinoHttp({
     return `${req.method} completed`;
   },
   // Define a custom error message
-  customErrorMessage: function (req, res, err) {
+  customErrorMessage: function (_req, res, _err) {
     return 'request errored with status code: ' + res.statusCode;
   },
   quietReqLogger: true,

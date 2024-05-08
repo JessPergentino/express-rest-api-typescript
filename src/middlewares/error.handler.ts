@@ -1,5 +1,5 @@
+import { ErrorTypes } from '@api/errors/error';
 import { NextFunction, Request, Response } from 'express';
-import { ErrorTypes } from '../api/errors/error';
 
 const handleError = (error: any, _req: Request, res: Response, next: NextFunction): void => {
   switch (error.name) {

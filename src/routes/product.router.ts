@@ -1,5 +1,5 @@
+import ProductController from '@api/controllers/product.controller';
 import { NextFunction, Request, Response, Router } from 'express';
-import ProductController from '../api/controllers/product.controller';
 
 const product = Router();
 
@@ -34,7 +34,7 @@ const product = Router();
  *
  */
 product.post('/product', (req: Request, res: Response, next: NextFunction): void => {
-  req.log.info("Iniciando requisicao")
+  req.log.info('Iniciando requisicao');
   ProductController.postProduct(req, res, next);
 });
 

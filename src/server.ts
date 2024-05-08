@@ -1,7 +1,7 @@
-import app from './app';
-import environment from './config/environment';
-import DataBase from './config/db';
-import { logger } from './config/logger';
+import DataBase from '@config/db';
+import environment from '@config/environment';
+import { logger } from '@config/logger';
+import app from 'app';
 
 DataBase.sync()
   .then(() => {
