@@ -1,6 +1,10 @@
 import request from 'supertest';
 import app from '../src/app';
 
+jest.mock('../src/config/db.ts', () => {
+  return require('./__mocks__/db');
+});
+
 jest.mock('../src/api/models/product.model.ts', () => {
   return require('./__mocks__/product');
 });
